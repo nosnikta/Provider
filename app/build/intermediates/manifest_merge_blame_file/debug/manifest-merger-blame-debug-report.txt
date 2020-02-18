@@ -1,0 +1,98 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="provider.helloaccessory.example.accessory.sdk.android.samsung.com.helloaccessoryprovider"
+4    android:versionCode="4"
+5    android:versionName="2.0.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="27" />
+9-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:5:5-68
+11-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:5:22-65
+12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+12-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:6:5-74
+12-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:6:22-71
+13    <uses-permission android:name="com.samsung.accessory.permission.ACCESSORY_FRAMEWORK" />
+13-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:7:5-92
+13-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:7:22-89
+14    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+14-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:8:5-117
+14-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:8:22-114
+15    <uses-permission android:name="com.samsung.WATCH_APP_TYPE.Companion" />
+15-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:9:5-76
+15-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:9:22-73
+16    <uses-permission android:name="com.samsung.wmanager.ENABLE_NOTIFICATION" />
+16-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:10:5-80
+16-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:10:22-77
+17
+18    <application
+18-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:12:5-45:19
+19        android:allowBackup="true"
+19-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:13:9-35
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:14:9-43
+22        android:label="@string/app_name"
+22-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:15:9-41
+23        android:testOnly="true"
+24        android:theme="@style/Theme.AppCompat" >
+24-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:16:9-47
+25        <service android:name="com.samsung.android.sdk.accessory.example.helloaccessory.provider.ProviderService" />
+25-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:18:9-52
+25-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:18:18-49
+26
+27        <receiver android:name="com.samsung.android.sdk.accessory.RegisterUponInstallReceiver" >
+27-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:20:9-24:20
+27-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:20:19-95
+28            <intent-filter>
+28-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:21:13-23:29
+29                <action android:name="com.samsung.accessory.action.REGISTER_AGENT" />
+29-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:22:17-86
+29-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:22:25-83
+30            </intent-filter>
+31        </receiver>
+32        <receiver android:name="com.samsung.android.sdk.accessory.ServiceConnectionIndicationBroadcastReceiver" >
+32-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:25:9-29:20
+32-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:25:19-112
+33            <intent-filter>
+33-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:26:13-28:29
+34                <action android:name="com.samsung.accessory.action.SERVICE_CONNECTION_REQUESTED" />
+34-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:27:17-100
+34-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:27:25-97
+35            </intent-filter>
+36        </receiver>
+37
+38        <activity android:name="com.samsung.android.sdk.accessory.example.helloaccessory.provider.MainActivity" >
+38-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:32:9-38:20
+38-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:32:19-47
+39            <intent-filter>
+39-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:33:13-37:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:34:17-69
+40-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:34:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:36:17-77
+42-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:36:27-74
+43            </intent-filter>
+44        </activity>
+45
+46        <meta-data
+46-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:39:9-41:62
+47            android:name="AccessoryServicesLocation"
+47-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:40:13-53
+48            android:value="/res/xml/accessoryservices.xml" />
+48-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:41:13-59
+49        <meta-data
+49-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:42:9-44:35
+50            android:name="GearAppType"
+50-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:43:13-39
+51            android:value="wgt" />
+51-->C:\Users\BenAtkinson\Downloads\HelloAccessory_Web\Provider(Android)_Consumer(Tizen)\Provider\app\src\main\AndroidManifest.xml:44:13-32
+52    </application>
+53
+54</manifest>
